@@ -1,0 +1,192 @@
+
+
+/*Css for the Components*/
+
+
+.Frontpage {
+    font-size: 62.5%; /*16px * 62.5 = 10px = 1rem*/
+    box-sizing: border-box;
+    font: 1.6rem Helvetica;
+    height: 100vh;
+    margin: 0;
+}
+
+
+a:hover{
+    color:orangered
+}
+
+.grid-container{
+    display:grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    
+}
+
+.header{
+    grid-area: header;
+    background-color:#203040;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0.5rem;
+
+}
+
+.header-links a{
+    color:white;
+    text-decoration:none;
+
+}
+.header-links a:hover{
+    color:orangered
+}
+
+.main{
+    grid-area:main;
+    background-color:
+}
+
+
+ .footer{
+     grid-area:footer;
+     background-color:#203040;
+     color:white;
+     display:flex;
+     align-items:center;
+     justify-content:center
+         
+ }
+
+@media(max-width: 479px) {
+
+    .header a {
+        font-size: 15px;
+    }
+    
+    .footer{
+        font-size:13px;
+    }
+
+    .brand {
+        font-size: 2rem;
+    }
+
+
+
+}
+.table {
+    width: 100%
+}
+
+th {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom:2rem;
+    
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: honeydew;
+}
+
+
+.button {
+    padding: 1rem;
+    border: .1rem #808080 solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: darkorange;
+}
+ .button:hover {
+        background-color: orangered
+    }
+
+.button.full-width {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+ 
+    /*Side Menu Bar / Nav Bar*/
+
+
+    .brand{
+        font-size: 3rem;
+        
+    }
+
+    .brand button{
+        font-size: 3rem;
+        padding: .5rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        
+       
+    }
+
+    .brand button:hover {
+        color:orangered;
+    }
+
+    .sidebarclose {
+        position: fixed;
+        transform: translateX(-30rem);
+        width:30rem;
+    }
+
+    .sidebaropen {
+        position: fixed;
+        transform : translateX(0);
+        width: 30rem;
+        background-color:azure;
+        height: 100%;
+        transition:all 0.5s;
+        
+    }
+
+.sidebar-close-button{
+    border-radius: 50%;
+    border: .1rem #000000 solid;
+    width: 3rem;
+    height: 3rem;
+    padding: 0rem;
+    cursor:pointer;
+    font-size: 2rem;
+    padding-top: 0;
+    position:absolute;
+    right:.5rem;
+    top:1.5rem;
+    
+}
+.sidebar-close-button:hover{
+    background-color:orangered
+}
+.sidebar-list {
+    list-style-type: none;
+}
+
+/*plot screen css*/
+
+
+.plot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 60%
+}
+.date {
+    text-align:center
+}
+
+
+
+   
