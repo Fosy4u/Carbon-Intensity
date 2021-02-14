@@ -4,7 +4,6 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { createLogger } from 'redux-logger'
 import { getDataReducer } from './Reducers/GetDataReducer.js';
-import storage from 'redux-persist/lib/storage'
 import { updateDateReducer } from './Reducers/UpdateDateReducer.js';
 
 
